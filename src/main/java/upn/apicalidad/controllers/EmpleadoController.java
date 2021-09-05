@@ -26,13 +26,7 @@ public class EmpleadoController {
     }
 
     @PostMapping("/guardar")
-    public ResponseEntity<?> guardarEmpleado(@RequestBody EmpleadoModel empleado){
-        if(empleadoService.existsByEmail(empleado.getCorreo())){
-            return new ResponseEntity(new Message("Correo ya existente"), HttpStatus.BAD_REQUEST);
-        }
-        this.empleadoService.guardarEmpleado(empleado);
-        return new ResponseEntity(new Message("Empleado Insertado"), HttpStatus.OK);
+    public EmpleadoModel guardarEmpleado(@RequestBody EmpleadoModel empleado){
+        return this.empleadoService.guardarEmpleado(empleado);
     }
-
-
 }
