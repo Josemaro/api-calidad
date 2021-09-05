@@ -30,7 +30,7 @@ public class SwaggerConfig implements WebMvcConfigurer {
                 "Descripción",
                 "2.0",
                 "https://github.com/Josemaro/ApiVijap",
-                new Contact("Josemaro", "https://github.com/Josemaro/ApiVijap", "jdiego.sullon@gmail.com"),
+                new Contact("Josemaro", "https://github.com/Josemaro/ApiVijap", "josemawo17@gmail.com"),
                 "Licencia",
                 "www.licencia.com",
                 Collections.emptyList()
