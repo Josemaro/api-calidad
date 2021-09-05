@@ -1,4 +1,4 @@
-package upn.apicalidad.repositories;
+package upn.apicalidad.repositories.ejemplos_repositorys;
 
 import java.util.Optional;
 

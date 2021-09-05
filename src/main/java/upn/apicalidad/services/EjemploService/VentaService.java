@@ -15,7 +15,7 @@ import upn.apicalidad.dto.ejemplosDto.VentaDto;
 import upn.apicalidad.models.ejemplo.DetalleVentaModel;
 import upn.apicalidad.models.ejemplo.UsuarioModel;
 import upn.apicalidad.models.ejemplo.VentaModel;
-import upn.apicalidad.repositories.VentaRepository;
+import upn.apicalidad.repositories.ejemplos_repositorys.*;
 
 @Service
 public class VentaService {

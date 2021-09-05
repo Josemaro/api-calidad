@@ -1,4 +1,4 @@
-package upn.apicalidad.repositories;
+package upn.apicalidad.repositories.ejemplos_repositorys;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
