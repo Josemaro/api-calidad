@@ -23,6 +23,7 @@ public class VentaModel {
     @JoinColumn(name = "idusuario", referencedColumnName = "idusuario")
     @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
     private UsuarioModel usuario;
+    
     private String tipocomprobante;
     private String seriecomprobante;
     private String numcomprobante;
