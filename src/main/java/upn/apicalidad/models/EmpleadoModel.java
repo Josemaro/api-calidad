@@ -19,7 +19,6 @@ public class EmpleadoModel {
     @Column(unique = true, nullable = false)
     @Getter @Setter
     private int empleado_id;
-
     @Getter @Setter
     private String nombres;
     @Getter @Setter

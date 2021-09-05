@@ -31,4 +31,4 @@ public class EmpleadoService {
     public Optional<EmpleadoModel> obtenerPorCorreo(String email){
         return empleadoRepository.findByCorreo(email);
     }
-} 
+}
