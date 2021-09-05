@@ -29,13 +29,13 @@ public class ContratoModel {
     @Getter @Setter
     private Boolean tieneAsignacionFamiliar;
     @Getter @Setter
-    private Float horasPorSemana;
+    private int horasPorSemana;
     @Getter @Setter
-    private Float pagoPorHora;
+    private Double pagoPorHora;
     @Getter @Setter
     private String puesto;
     @Getter @Setter
-    private Boolean estaCancelado;
+    private Boolean cancelado;
 
     @Getter @Setter
     @OneToOne(cascade=CascadeType.ALL)//one-to-one

@@ -1,4 +1,4 @@
-package upn.apicalidad.services;
+package upn.apicalidad.services.EjemploService;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -10,11 +10,11 @@ import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import upn.apicalidad.dto.DetalleVentaDto;
-import upn.apicalidad.dto.VentaDto;
-import upn.apicalidad.models.DetalleVentaModel;
-import upn.apicalidad.models.UsuarioModel;
-import upn.apicalidad.models.VentaModel;
+import upn.apicalidad.dto.ejemplosDto.DetalleVentaDto;
+import upn.apicalidad.dto.ejemplosDto.VentaDto;
+import upn.apicalidad.models.ejemplo.DetalleVentaModel;
+import upn.apicalidad.models.ejemplo.UsuarioModel;
+import upn.apicalidad.models.ejemplo.VentaModel;
 import upn.apicalidad.repositories.VentaRepository;
 
 @Service

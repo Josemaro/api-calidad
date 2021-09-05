@@ -2,10 +2,10 @@ package upn.apicalidad.repositories;
 
 import java.util.Optional;
 
-import upn.apicalidad.models.UsuarioModel;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import upn.apicalidad.models.ejemplo.UsuarioModel;
 
 
 @Repository

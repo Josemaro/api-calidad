@@ -1,8 +1,8 @@
 package upn.apicalidad.controllers;
 import java.util.ArrayList;
 
-import upn.apicalidad.dto.VentaDto;
-import upn.apicalidad.services.VentaService;
+import upn.apicalidad.dto.ejemplosDto.VentaDto;
+import upn.apicalidad.services.EjemploService.VentaService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

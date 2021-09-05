@@ -1,5 +1,27 @@
 package upn.apicalidad.models;
+import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.Set;
 
+import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Entity
+@Table(name = "nomina")
 public class NominaModel {
-    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(unique = true, nullable = false)
+    @Getter @Setter
+    private int nomina_id;
+    @Getter @Setter
+    private String descripcion;
+    @Getter @Setter
+    private LocalDateTime fecha;
+    @Getter @Setter
+    private Boolean cerrada;
 }

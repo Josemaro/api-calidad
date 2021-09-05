@@ -1,4 +1,4 @@
-package upn.apicalidad.dto;
+package upn.apicalidad.dto.ejemplosDto;
 
 import lombok.Getter;
 import lombok.Setter;

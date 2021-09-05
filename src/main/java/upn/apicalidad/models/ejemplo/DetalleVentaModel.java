@@ -1,4 +1,4 @@
-package upn.apicalidad.models;
+package upn.apicalidad.models.ejemplo;
 
 import javax.persistence.*;
 import javax.persistence.Entity;

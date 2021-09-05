@@ -1,10 +1,10 @@
 package upn.apicalidad.repositories;
 import java.util.ArrayList;
 
-import upn.apicalidad.models.VentaModel;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
+
+import upn.apicalidad.models.ejemplo.VentaModel;
 
 @Repository
 public interface VentaRepository extends JpaRepository<VentaModel,Long> {

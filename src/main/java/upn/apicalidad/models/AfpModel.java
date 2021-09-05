@@ -20,7 +20,7 @@ public class AfpModel {
     private int afp_id;
 
     @Getter @Setter
-    private String nombres;
+    private String nombre;
     @Getter @Setter
-    private String apellidos;
+    private Double porcentajeDescuento;
 }

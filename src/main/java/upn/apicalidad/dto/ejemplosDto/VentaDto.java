@@ -1,12 +1,12 @@
-package upn.apicalidad.dto;
+package upn.apicalidad.dto.ejemplosDto;
 
 import java.util.Date;
 import java.util.Set;
 
 import lombok.Getter;
 import lombok.Setter;
-import upn.apicalidad.models.DetalleVentaModel;
-import upn.apicalidad.models.UsuarioModel;
+import upn.apicalidad.models.ejemplo.DetalleVentaModel;
+import upn.apicalidad.models.ejemplo.UsuarioModel;
 
 public class VentaDto {
     @Getter @Setter
