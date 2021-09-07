@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.v3.oas.annotations.parameters.RequestBody;
+import upn.apicalidad.dto.EmpleadoDto;
 import upn.apicalidad.dto.Message;
 import upn.apicalidad.models.EmpleadoModel;
 import upn.apicalidad.services.EmpleadoService;
@@ -26,7 +27,8 @@ public class EmpleadoController {
     }
 
     @PostMapping("/guardar")
-    public EmpleadoModel guardarEmpleado(@RequestBody EmpleadoModel empleado){
-        return this.empleadoService.guardarEmpleado(empleado);
+    public ResponseEntity<?> create(@RequestBody EmpleadoDto empleadoDto) {
+        empleadoService.guardarEmpleado(empleadoDto);
+        return new ResponseEntity(HttpStatus.OK);
     }
 }

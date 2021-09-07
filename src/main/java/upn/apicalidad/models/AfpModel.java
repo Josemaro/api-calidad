@@ -27,7 +27,6 @@ public class AfpModel {
     @OneToMany(fetch =FetchType.LAZY,mappedBy = "afp")
 	@Getter @Setter
 	private Set<ContratoModel> contratos;
-
-    
+  
 
 }
