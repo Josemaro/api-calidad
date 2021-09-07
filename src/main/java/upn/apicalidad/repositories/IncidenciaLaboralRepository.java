@@ -3,9 +3,10 @@ package upn.apicalidad.repositories;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import upn.apicalidad.models.ContratoModel;
+import upn.apicalidad.models.IncidenciaLaboralModel;
+
 
 @Repository
-public interface ContratoRepository extends JpaRepository<ContratoModel,Integer>{
+public interface IncidenciaLaboralRepository extends JpaRepository<IncidenciaLaboralModel,Integer>{
         
 }
