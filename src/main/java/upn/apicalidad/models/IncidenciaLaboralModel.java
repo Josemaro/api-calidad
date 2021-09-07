@@ -23,5 +23,16 @@ public class IncidenciaLaboralModel {
     @Getter @Setter
     private int totalHorasExtras;
 
+    @ManyToOne(fetch=FetchType.EAGER)
+    @JoinColumn(name = "contrato_id")
+    @Getter @Setter
+    private ContratoModel contrato;
+
+    
+    @ManyToOne(fetch=FetchType.EAGER)
+    @JoinColumn(name = "periodo_nomina_id")
+    @Getter @Setter
+    private PeriodoNominaModel periodo_nomina;
+
 
 }

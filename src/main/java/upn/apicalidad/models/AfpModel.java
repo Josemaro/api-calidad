@@ -23,4 +23,11 @@ public class AfpModel {
     private String nombre;
     @Getter @Setter
     private Double porcentajeDescuento;
+
+    @OneToMany(fetch =FetchType.LAZY,mappedBy = "afp")
+	@Getter @Setter
+	private Set<ContratoModel> contratos;
+
+    
+
 }

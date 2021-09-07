@@ -24,4 +24,13 @@ public class PeriodoNominaModel {
     private LocalDateTime fechaInicio;
     @Getter @Setter
     private LocalDateTime fechaFin;
+
+    @OneToMany(fetch =FetchType.LAZY,mappedBy = "periodo_nomina")
+	@Getter @Setter
+	private Set<IncidenciaLaboralModel> incidenciaLaboral;
+
+    @OneToMany(fetch =FetchType.LAZY,mappedBy = "periodo_nomina")
+	@Getter @Setter
+	private Set<NominaModel> nominas;
+
 }

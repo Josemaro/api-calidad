@@ -26,12 +26,16 @@ public class EmpleadoModel {
     @Getter @Setter
     private String dni;
     @Getter @Setter
-    private LocalDateTime fechaNacimiento;
+    private Date fechaNacimiento;
     @Getter @Setter
     private String telefono;
     @Getter @Setter
     private String correo;
     @Getter @Setter
     private String direccion;
+    @OneToMany(fetch =FetchType.LAZY,mappedBy = "empleado")
+	@Getter @Setter
+	private Set<ContratoModel> contratos;
+
 
 }

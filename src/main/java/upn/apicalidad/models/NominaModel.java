@@ -24,4 +24,15 @@ public class NominaModel {
     private LocalDateTime fecha;
     @Getter @Setter
     private Boolean cerrada;
+
+    @ManyToOne(fetch=FetchType.EAGER)
+    @JoinColumn(name = "periodo_nomina_id")
+    @Getter @Setter
+    private PeriodoNominaModel periodo_nomina;
+
+    @OneToMany(fetch =FetchType.LAZY,mappedBy = "nomina")
+	@Getter @Setter
+	private Set<BoletaDePagoModel> boletas;
+
+    
 }

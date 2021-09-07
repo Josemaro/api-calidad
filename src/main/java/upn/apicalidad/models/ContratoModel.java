@@ -37,13 +37,28 @@ public class ContratoModel {
     @Getter @Setter
     private Boolean cancelado;
 
+
+    @ManyToOne(fetch=FetchType.EAGER)
+    @JoinColumn(name = "empleado_id")
     @Getter @Setter
-    @OneToOne(cascade=CascadeType.ALL)//one-to-one
-    @JoinColumn(name="afp_id")
+    private EmpleadoModel empleado;
+
+    
+    @ManyToOne(fetch=FetchType.EAGER)
+    @JoinColumn(name = "afp_id")
+    @Getter @Setter
     private AfpModel afp;
 
-    @Getter @Setter
-    @OneToOne(cascade=CascadeType.ALL)//one-to-one
-    @JoinColumn(name="empleado_id")
-    EmpleadoModel empleado;
+    @OneToMany(fetch =FetchType.LAZY,mappedBy = "contrato")
+	@Getter @Setter
+	private Set<IncidenciaLaboralModel> incidenciaLaborales;
+
+    @OneToMany(fetch =FetchType.LAZY,mappedBy = "contrato")
+	@Getter @Setter
+	private Set<BoletaDePagoModel> boletasDePagos;
+
+
+
+
+
 }
