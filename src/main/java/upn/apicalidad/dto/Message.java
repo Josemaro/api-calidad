@@ -1,4 +1,4 @@
-package upn.apicalidad.dto.ejemplosDto;
+package upn.apicalidad.dto;
 
 public class Message {
     private String message;
