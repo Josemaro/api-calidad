@@ -8,11 +8,15 @@ import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Table(name = "boleta_de_pago")
+@AllArgsConstructor
+@NoArgsConstructor
 public class BoletaDePagoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

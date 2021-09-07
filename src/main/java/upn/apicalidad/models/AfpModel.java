@@ -7,11 +7,15 @@ import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Table(name = "afp")
+@AllArgsConstructor
+@NoArgsConstructor
 public class AfpModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
