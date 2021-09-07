@@ -27,6 +27,6 @@ public class EmpleadoDto {
     private String correo;
     @Getter @Setter
     private String direccion;
-	@Getter @Setter
-	private Set<ContratoModel> contratos;
+	// @Getter @Setter
+	// private Set<ContratoModel> contratos;
 }

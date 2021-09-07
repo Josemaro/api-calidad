@@ -37,10 +37,16 @@ public class EmpleadoService {
         empleado.setTelefono(empleadoDto.getTelefono());
         empleado.setCorreo(empleadoDto.getCorreo());
         empleado.setDireccion(empleadoDto.getDireccion());
-        empleado.setContratos(empleadoDto.getContratos());
-
-        return empleadoRepository.save(empleado);
+        //empleado.setContratos(empleadoDto.getContratos());
+        empleadoRepository.save(empleado);
+        return empleado;
     }
+
+    public void delete(int id){
+        empleadoRepository.deleteById(id);
+    }
+
+
     public Optional<EmpleadoModel> obtenerPorCorreo(String email){
         return empleadoRepository.findByCorreo(email);
     }
